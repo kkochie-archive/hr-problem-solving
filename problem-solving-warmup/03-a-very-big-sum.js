@@ -45,6 +45,16 @@ When we add several integer values, the resulting sum might exceed the above ran
  */
 
 function aVeryBigSum(ar) {
-  
+  let sum = 0
+  for(let i=0; i < ar.length; i++) {
+    sum += ar[i]
+  }
+  return sum
+}
 
+// Alternate
+function aVeryBigSum(ar) {
+  return ar.reduce((acc, num) => {
+      return acc + num
+  }, 0)
 }

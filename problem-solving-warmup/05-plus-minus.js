@@ -20,7 +20,7 @@ Make an array of filtered numbers into positive, negative and zeroes. Divide eac
 function plusMinus(arr) {
   [ arr.filter(n => n > 0).length / arr.length,
     arr.filter(n => n < 0).length / arr.length,
-    arr.filter(n =>n === 0).length / arr.length
+    arr.filter(n => n === 0).length / arr.length
   ]
   .forEach((num) => console.log(num.toFixed(6)))
 }

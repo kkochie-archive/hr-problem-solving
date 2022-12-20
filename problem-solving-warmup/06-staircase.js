@@ -25,6 +25,9 @@ Print a right-aligned staircase of size n using # symbols and spaces. NOTE: the 
 */
 
 function staircase(n) {
-  // Write your code here
-
+  for (let i = 1; i <= n; i++) {
+    const space = n - i
+    const stair = n - space
+    console.log(' '.repeat(space) + '#'.repeat(stair))
+  }
 }

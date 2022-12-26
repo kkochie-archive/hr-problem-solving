@@ -75,8 +75,12 @@ Complete the 'countApplesAndOranges' function below.
 */
 
 function countApplesAndOranges(s, t, a, b, apples, oranges) {
-    console.log(apples.filter(el ))
+    let appleCount = 0
+    let orangeCount = 0
 
+    apples.map((el) => ((a + el >= s) && (a + el <= t) ? appleCount++ : null ))
+    oranges.map((el) => ((b + el >= s) && (b + el <= t) ? orangeCount++ : null ))
+
+    console.log(appleCount)
+    console.log(orangeCount)
 }
-
-console.log("hello")
